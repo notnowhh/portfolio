@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Jishin A</title>
+    
+    <script>
+        function validateForm() {
+            var userName = document.getElementById("name").value;
+            var userEmail = document.getElementById("email").value;
+
+            if (userName =="" || userEmail =="") {
+                alert("Please fill out all required fields!");
+                return false; 
+            }
+            alert("Thank you, " + userName + "! Form submitted successfully.");
+            return true; }
+    </script>
+
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+
+        h1 {
+            color: #ffffff;
+        }
+
+        .links a {
+            display: inline-block;
+            background-color: #111111;
+            color: #00ffcc;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1px solid #222222;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Let's Connect</h1>
+
+        <div class="links">
+            <a href="mailto:jishin4t@gmail.com">Email</a>
+            <a href="https://wa.me/918301069802" target="_blank">WhatsApp</a>
+            <a href="https://twitter.com/xxjishi" target="_blank">Twitter / X</a>
+            <a href="https://www.linkedin.com/in/jishin4t/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="simple-form">
+            <h2>Know More About Me</h2>
+            
+            <form onsubmit="return validateForm()">
+                <label style="width: 60px; font-size: 16px;">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" style="width: 250px; padding: 8px;">
+                <br><br>
+                
+                <label style="width: 60px; font-size: 16px;">Email:</label>
+                <input type="text" id="email" placeholder="Enter your email" style="width: 250px; padding: 8px;">
+                <br><br>
+                <center><button type="submit" style="background-color: #00ffcc; width: 100px; height: 50px; font-size: 18px; border-radius: 5px;">Submit</button></center>
+            </form>
+        </div>
+        </div>
+
+</body>
+</html>

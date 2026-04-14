@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jishin A | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #00ffcc; 
+            --border: #79f4ff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar {
+            background: rgba(17, 17, 17, 0.8);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            margin-top: 30px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover, .navbar a.active {
+            color: var(--accent);
+        }
+
+        .box {
+            max-width: 800px;
+            width: 100%;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0 0 10px 0;
+            background: linear-gradient(90deg, #ffffff, #888888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            margin: 0;
+            font-size: 1.2rem;
+            font-family: monospace; 
+        }
+
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        p {
+            line-height: 1.8;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        .skills-c {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skill-b {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            transition: border-color 0.3s ease;
+        }
+
+        .skill-b:hover {
+            border-color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="box">
+        <header class="header">
+            <div>
+                <h1>Jishin A</h1>
+                <p class="subtitle">> Computer Science Engineering Student</p>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <p>An 18-year-old CS Undergraduate at FISAT (KTU). Passionate about exploring technologies and building efficient solutions.</p>
+                
+                <h2 style="margin-top: 40px;">Stack</h2>
+                <div class="skills-c">
+                    <span class="skill-b">C</span>
+                    <span class="skill-b">Python</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
