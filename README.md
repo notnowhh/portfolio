@@ -3,7 +3,7 @@
 Welcome to the source code of my personal portfolio website! This project was developed as my Semester 2 Fundamentals of Computing (FOC) mini-project at FISAT (KTU).
 
 ## 🌐 Live Demo
-Check out the live website here: **[Insert your GitHub Pages link here]**
+Check out the live website here: **https://notnowhh.github.io/portfolio/**
 
 ## 🛠️ Tech Stack
 * **HTML5:** Used semantic HTML (`<nav>`, `<main>`, `<section>`) for clean, readable code structure.
