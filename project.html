@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Jishin A</title>
+    <title>About me | Jishin A</title>
     <style>
         :root {
             --bg-color: #050505;
@@ -23,11 +23,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
-        }
-
+        }  
         .box {
-            margin: 100px auto; /* Pushed down a bit more to center it */
+            max-width: 800px;
+            width: 100%;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
         }
 
         h1 {
@@ -38,37 +40,71 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .status-text {
-            color: var(--accent);
-            font-family: monospace;
-            font-size: 1.2rem;
-            margin: 20px 0;
-            padding: 15px;
-            background-color: var(--surface-color);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            display: inline-block;
-        }
-
         p {
             color: var(--text-secondary);
             font-size: 1.1rem;
-            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse; /* Removes double borders */
+            background-color: var(--surface-color);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            color: var(--accent); /* Makes the left side neon green */
+            width: 35%;
+            font-weight: bold;
+        }
+
+        td {
+            color: var(--text-primary);
+        }
+
+        /* Removes the bottom border from the very last row */
+        tr:last-child th, tr:last-child td {
+            border-bottom: none;
         }
     </style>
 </head>
 <body>
-
-    
-
     <div class="box">
-        <h1>Projects</h1>
-        
-        <div class="status-text">
-            > System Status: Under Development_
-        </div>
+        <h1>Current Studies</h1>
+        <p>A quick overview of my academic background and current pursuits.</p>
 
-        <p>I am currently building out this section to showcase my work.<br>Check back soon </p>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <td>B.Tech in Computer Science & Engineering</td>
+            </tr>
+            <tr>
+                <th>Semester</th>
+                <td>Semester 2</td>
+            </tr>
+            <tr>
+                <th>Institution</th>
+                <td>Federal Institute of Science and Technology (FISAT)</td>
+            </tr>
+            <tr>
+                <th>University</th>
+                <td>APJ Abdul Kalam Technological University (KTU)</td>
+            </tr>
+            <tr>
+                <th>Core Focus</th>
+                <td>Fundamentals of Computing, C, Python</td>
+            </tr>
+        </table>
     </div>
 
 </body>
